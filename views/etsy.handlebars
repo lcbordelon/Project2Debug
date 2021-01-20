@@ -1,0 +1,40 @@
+
+    <!--first row for top 'header buffer'-->
+    <div class="row" id="top-row-buffer"></div>
+
+    <!--Container to hold formatting below-->
+    <div class="container">
+
+        <!--second row for "Add List" text-->
+        <div class="row center">
+            <h2 id="api-search-title">Search for a Product</h2>
+        </div>
+
+        <!--third row for entering a name to create a list-->
+        <div class="row">
+            <div class="input-field col s9">
+                <textarea id="productName" class="materialize-textarea"></textarea>
+                <label for="search">Search Product</label>
+            </div>
+            <a class="waves-effect waves-light btn col s3" id="search-btn">Search</a>
+        </div>
+
+        <!--fourth row for "My Lists" text-->
+        <div class="row">
+            <h2 id="search-results">Results</h2>
+        </div>
+
+
+        <!--fifth row for unordered list to generate data from ListMembers table-->
+        <div class="collection" id="resultsDisplay">
+            <a href="www.google.com" class="collection-item" id="result-one"></a>
+            <a href="#" class="collection-item" id="result-two"></a>
+            <a href="#" class="collection-item" id="result-three"></a>
+            <a href="#" class="collection-item" id="result-four"></a>
+            <a href="#" class="collection-item" id="result-five"></a>
+        </div>
+
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/etsy.js"
+    <script type="text/javascript" src="js/materialize.min.js"></script>

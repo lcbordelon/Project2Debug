@@ -1,0 +1,62 @@
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1581434969796-95f4b04d810b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80);
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Actor", sans-serif;
+}
+
+#top-row-buffer {
+  height: 100px;
+}
+
+.card {
+  width: 100%;
+  height: 900px;
+  align-self: center;
+}
+
+#card-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 50px;
+}
+
+
+#lists-title,
+#api-results {
+  color: azure;
+  text-align: center;
+}
+
+#api-search-title,
+#search-results {
+  color: azure;
+}
+
+#productName {
+  color: azure;
+}
+
+#listmember-container {
+  align-items: center;
+  margin-top: 30px;
+}
+
+#xmas-card {
+  align-items: center;
+}
+
+.list-member-collection {
+  height: 60px;
+}
+
+.member-name-text {
+  font-size: 25px;
+}
+
+.delete-btn {
+  padding-left: 30px;
+}

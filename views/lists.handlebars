@@ -1,0 +1,57 @@
+<!--first row for top 'header buffer'-->
+<div class="row" id="top-row-buffer"></div>
+
+<!--Container to hold formatting below-->
+<div class="container">
+
+    <!--second row for "Add List" text-->
+    <div class="row">
+        <h2 id="lists-title">Add A List</h2>
+    </div>
+
+    <!--third row for entering a name to create a list-->
+    <div class="row">
+        <div class="input-field col s9">
+            <textarea id="add-list-member" class="materialize-textarea white-text"></textarea>
+            <label for="search">Add Name Here</label>
+        </div>
+        <a class="waves-effect waves-light btn col s3" id="create-list-btn">Create List</a>
+    </div>
+
+    <!--fourth row for "My Lists" text-->
+    <div class="row">
+        <h2 id="lists-title">My Lists</h2>
+    </div>
+
+
+
+    <!--fifth row for unordered list to generate data from ListMembers table-->
+    <div class="row">
+        <div class="container" id="listmember-container">
+            <span class"flow-text">
+                <div class="card large sticky-action red darken-4" id="xmas-card">
+                    <ul class="list-names collection">
+                        {{#each lists}}
+                        <li class="collection-item green darken-1 list-member-collection" id="listmember">
+
+                            <span class="member-name-text">{{member}}</span>
+
+                            <a class="waves-effect waves-light btn secondary-content red darken-1 delete-btn"
+                                data-id={{id}}>Delete</a>
+                            <a class="waves-effect waves-light btn secondary-content green darken-4"
+                                href="kringle?={{id}}">Add to List</a>
+                            <a class="waves-effect waves-light btn secondary-content yellow darken-3"
+                                href="members?={{id}}">View List</a>
+
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </div>
+</div>
+<p id="api-results">API RESULTS DISPLAY HERE PLZ</p>
+<!--JavaScript at end of body for optimized loading-->
+
+<script src="js/lists.js" type="text/javascript"></script>
